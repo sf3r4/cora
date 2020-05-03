@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "lerna run --scope app-* --stream --parallel --no-bail start",
+    "dev": "lerna run --scope app-* --stream --parallel --no-bail dev",
+    "dev-all": "lerna run --scope app-* --stream --parallel --no-bail dev",
+    "bootstrap": "lerna bootstrap --force-local",
+    "build": "lerna run --scope app-* --stream --parallel --no-bail build",
+    "clean": "lerna clean -y",
+    "test": "lerna run --scope app-* --stream test"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  }
+}

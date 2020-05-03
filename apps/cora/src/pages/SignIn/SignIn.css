@@ -1,0 +1,19 @@
+.login-form {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto 0;
+}
+
+.login-form h1 {
+  text-align: center;
+}
+
+.login-form .forgot-row {
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .login-form .forgot-row {
+    text-align: center;
+  }
+}
